@@ -33,7 +33,7 @@ public class RepoService {
     }
 
     private List<AllRepositoriesResult> fetchRepositories(String userName) {
-        return gitHubClient.getOwnerAndRepositories(userName, 5);
+        return gitHubClient.getOwnerAndRepositories(userName);
     }
 
     private List<GetAllBranchesResponseDto> fetchBranches(String owner, String repoName) {
